@@ -5,7 +5,7 @@ import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbBean
 import software.amazon.awssdk.enhanced.dynamodb.mapper.annotations.DynamoDbPartitionKey
 
 @DynamoDbBean
-data class DynamoEntity(
+data class ReproducerEntity(
     @get:DynamoDbPartitionKey
     @get:DynamoDbAttribute("entityId")
     var entityId: String,

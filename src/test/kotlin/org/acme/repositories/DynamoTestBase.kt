@@ -17,9 +17,6 @@ import java.net.URI
 
 open class DynamoTestBase {
 
-    @Inject
-    lateinit var repo: DynamoRepository
-
     companion object {
         @JvmStatic
         @BeforeAll
@@ -32,7 +29,6 @@ open class DynamoTestBase {
                         AttributeDefinition.builder().attributeName("entityId").attributeType(ScalarAttributeType.S)
                             .build()
                     )
-
                     .keySchema(
                         KeySchemaElement.builder().attributeName("entityId").keyType(KeyType.HASH).build(),
                     )
