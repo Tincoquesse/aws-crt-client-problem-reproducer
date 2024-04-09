@@ -21,7 +21,6 @@ dependencies {
     implementation("io.quarkus:quarkus-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation("io.quarkus:quarkus-arc")
-    implementation("software.amazon.awssdk:aws-crt-client")
     testImplementation("io.quarkus:quarkus-junit5")
 }
 
