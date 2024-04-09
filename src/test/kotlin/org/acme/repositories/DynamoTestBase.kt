@@ -1,6 +1,5 @@
 package org.acme.repositories
 
-import jakarta.inject.Inject
 import org.eclipse.microprofile.config.ConfigProvider
 import org.junit.jupiter.api.BeforeAll
 import software.amazon.awssdk.auth.credentials.AwsBasicCredentials
